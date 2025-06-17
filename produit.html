@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Boutique - Nuhud</title>
+  <link rel="stylesheet" href="page.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">Nuhud</div>
+    <ul class="nav-menu">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="modele.html">Nos modèles</a></li>
+      <li><a href="produit.html">Nos produits</a></li>
+      <li><a href="hennaya.html">Nos Hennaya</a></li>
+      <li><a href="contact.html">Réservation</a></li>
+      <li><a href="panier.html" class="panier-icon"><i class="fas fa-shopping-cart"></i></a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Notre Boutique de henné </h1>
+    
+    <section class="boutique-grid">
+      <article class="produit-boutique">
+        <img src="henne/produit1.jpg" alt="Henné en cône 1" />
+        <h2>Henné Naturel 10g</h2>
+        <p>Le meilleur henné 100% naturel.</p>
+        <p class="prix">20€</p>
+        <button class="btn-favoris" aria-label="Ajouter aux favoris"><i class="fas fa-heart"></i></button>
+        <button onclick="ajouterAuPanier('Henné Naturel 10g', 20, 'henne/produit1.jpg')">Ajouter au panier</button>
+      </article>
+      <article class="produit-boutique">
+        <img src="henne/produit2.jpg" alt="Henné en cône 2" />
+        <h2>Henné Naturel 100g</h2>
+        <p>Henné rouge traditionnel.</p>
+        <p class="prix">30€</p>
+        <button class="btn-favoris" aria-label="Ajouter aux favoris"><i class="fas fa-heart"></i></button>
+        <button onclick="ajouterAuPanier('Henné Naturel 100g', 30, 'henne/produit2.jpg')">Ajouter au panier</button>
+      </article>
+      <article class="produit-boutique">
+        <img src="henne/produit3.jpg" alt="Henné en cône 3" />
+        <h2>Henné Jagua 10g</h2>
+        <p>Le meilleur henné 100% naturel.</p>
+        <p class="prix">30€</p>
+        <button class="btn-favoris" aria-label="Ajouter aux favoris"><i class="fas fa-heart"></i></button>
+        <button onclick="ajouterAuPanier('Henné Jagua 10g', 30, 'henne/produit3.jpg')">Ajouter au panier</button>
+      </article>
+      <article class="produit-boutique">
+        <img src="henne/produit4.jpg" alt="Henné en cône 4" />
+        <h2>Henné Jagua 100g</h2>
+        <p>Le meilleur henné 100% naturel.</p>
+        <p class="prix">45€</p>
+        <button class="btn-favoris" aria-label="Ajouter aux favoris"><i class="fas fa-heart"></i></button>
+        <button onclick="ajouterAuPanier('Henné Jagua 100g', 45, 'henne/produit4.jpg')">Ajouter au panier</button>
+      </article>
+      <article class="produit-boutique">
+        <img src="henne/produit5.jpg" alt="Henné en cône 5" />
+        <h2> Cône de henné naturel </h2>
+        <p>Le meilleur henné 100% naturel.</p>
+        <p class="prix">4€</p>
+        <button class="btn-favoris" aria-label="Ajouter aux favoris"><i class="fas fa-heart"></i></button>
+        <button onclick="ajouterAuPanier('Cône de henné naturel 50g', 4, 'henne/produit5.jpg')">Ajouter au panier</button>
+      </article>
+      <article class="produit-boutique">
+        <img src="henne/produit6.jpg" alt="Henné en cône 6" />
+        <h2>Cône de henné au jagua </h2>
+        <p>Le meilleur henné 100% naturel.</p>
+        <p class="prix">10€</p>
+        <button class="btn-favoris" aria-label="Ajouter aux favoris"><i class="fas fa-heart"></i></button>
+        <button onclick="ajouterAuPanier('Cône de henné au jagua 50g', 10, 'henne/produit6.jpg')">Ajouter au panier</button>
+      </article>
+      <article class="produit-boutique">
+        <img src="henne/produit7.jpg" alt="Henné en cône 7" />
+        <h2>Huile essentielle à la lavande </h2>
+        <p>Le meilleur henné 100% naturel.</p>
+        <p class="prix">15€</p>
+        <button class="btn-favoris" aria-label="Ajouter aux favoris"><i class="fas fa-heart"></i></button>
+        <button onclick="ajouterAuPanier('Huile essentielle à la lavande', 15, 'henne/produit7.jpg')">Ajouter au panier</button>
+      </article>
+      <article class="produit-boutique">
+        <img src="henne/produit8.jpg" alt="Henné en cône 8" />
+        <h2>Huile essentielle by Nuhud</h2>
+        <p>Le meilleur henné 100% naturel.</p>
+        <p class="prix">17€</p>
+        <button class="btn-favoris" aria-label="Ajouter aux favoris"><i class="fas fa-heart"></i></button>
+        <button onclick="ajouterAuPanier('Huile essentielle by Nuhud 50g', 17, 'henne/produit8.jpg')">Ajouter au panier</button>
+      </article>
+      <article class="produit-boutique">
+        <img src="henne/produit9.jpg" alt="Henné en cône 9" />
+        <h2>Eau de rose</h2>
+        <p>Le meilleur henné 100% naturel.</p>
+        <p class="prix">17€</p>
+        <button class="btn-favoris" aria-label="Ajouter aux favoris"><i class="fas fa-heart"></i></button>
+        <button onclick="ajouterAuPanier('Eau de rose', 17, 'henne/produit9.jpg')">Ajouter au panier</button>
+      </article>
+      <article class="produit-boutique">
+        <img src="henne/produit10.jpg" alt="Henné en cône 10" />
+        <h2>La henna box</h2>
+        <p>Le meilleur henné 100% naturel.</p>
+        <p class="prix">50€</p>
+        <button class="btn-favoris" aria-label="Ajouter aux favoris"><i class="fas fa-heart"></i></button>
+        <button onclick="ajouterAuPanier('La henna box', 50, 'henne/produit10.jpg')">Ajouter au panier</button>
+      </article>
+    </section>
+  </main>
+
+
+ <!-- À placer juste après <main> ou avant </body> -->
+<div class="modal-overlay">
+  <div class="modal-content"></div>
+</div>
+
+
+  <footer>
+    <div class="footer-content">
+      <p>© 2025 Nuhud - Tous droits réservés</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f" aria-label="Facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram" aria-label="Instagram"></i></a>
+        <a href="#"><i class="fab fa-whatsapp" aria-label="WhatsApp"></i></a>
+      </div>
+      <p>Contact : +33 6 12 34 56 78</p>
+    </div>
+  </footer>
+
+
+  
+  <script src="pagejs.js"></script>
+
+</body>
+</html>

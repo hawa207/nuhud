@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Réservation - Henné & ENAIA</title>
+  <link rel="stylesheet" href="page.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">Nuhud</div>
+    <ul class="nav-menu">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="modele.html">Nos modèles</a></li>
+      <li><a href="produit.html">Nos produits</a></li>
+      <li><a href="hennaya.html">Nos Hennaya</a></li>
+      <li><a href="contact.html">Réservation</a></li>
+      <li><a href="panier.html" class="panier-icon"><i class="fas fa-shopping-cart"></i></a></li>
+    </ul>
+  </nav>
+
+ <main>
+  <h1>Formulaire de Réservation</h1>
+  <form id="form-reservation" action="#" method="post">
+    <label for="nom">Nom complet :</label>
+    <input type="text" id="nom" name="nom" required />
+
+    <label for="email">Adresse email :</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="telephone">Téléphone :</label>
+    <input type="tel" id="telephone" name="telephone" required />
+
+    <label for="date">Date souhaitée :</label>
+    <input type="date" id="date" name="date" required />
+
+    <label for="heure">Heure souhaitée :</label>
+    <input type="time" id="heure" name="heure" required />
+
+    <label for="hennaya">Choisissez votre hennaya :</label>
+    <select id="hennaya" name="hennaya" required>
+      <option value="">--Sélectionnez--</option>
+      <option value="enaia1">Fatima</option>
+      <option value="enaia2">Amina</option>
+      <option value="enaia3">Samira</option>
+      <option value="enaia4">Mariam</option>
+      <option value="enaia5">Arti</option>
+      <option value="enaia6">Nour</option>
+      <option value="enaia7">Yasmina</option>
+      <option value="enaia8">Kamissa</option>
+      <option value="enaia9">Zeynab</option>
+      <option value="enaia10">Nani</option>
+    </select>
+
+    <fieldset>
+      <legend>Modèle(s) de henné souhaité(s) :</legend>
+
+      <input type="checkbox" id="main-simple" name="modeles[]" value="Main simple" />
+      <label class="custom-option" for="main-simple">Main simple</label>
+
+      <input type="checkbox" id="main-travaille" name="modeles[]" value="Main travaillée" />
+      <label class="custom-option" for="main-travaille">Main travaillée</label>
+
+      <input type="checkbox" id="pied-simple" name="modeles[]" value="Pied simple" />
+      <label class="custom-option" for="pied-simple">Pied simple</label>
+
+      <input type="checkbox" id="pied-travaille" name="modeles[]" value="Pied travaillé" />
+      <label class="custom-option" for="pied-travaille">Pied travaillé</label>
+
+      <input type="checkbox" id="mariee" name="modeles[]" value="Mariées" />
+      <label class="custom-option" for="mariee">Mariées</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Type de henné :</legend>
+
+      <input type="radio" id="naturel" name="type_henne" value="Naturel" required />
+      <label class="custom-option" for="naturel">Henné Naturel</label>
+
+      <input type="radio" id="jagua" name="type_henne" value="Jagua" required />
+      <label class="custom-option" for="jagua">Henné Jagua</label>
+    </fieldset>
+
+    <label for="commentaire">Commentaires :</label>
+    <textarea id="commentaire" name="commentaire" rows="4"></textarea>
+
+    <button type="submit">Envoyer la réservation</button>
+  </form>
+</main>
+  <footer>
+    <div class="footer-content">
+      <p>© 2025 Nuhud - Tous droits réservés</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f" aria-label="Facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram" aria-label="Instagram"></i></a>
+        <a href="#"><i class="fab fa-whatsapp" aria-label="WhatsApp"></i></a>
+      </div>
+      <p>Contact : +33 6 12 34 56 78</p>
+    </div>
+  </footer>
+  <script src="C:\Users\HAWAOU\Desktop\projet2/pagejs.js"></script>
+
+</body>
+</html>
